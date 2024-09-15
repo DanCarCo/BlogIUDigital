@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen">
+        <div id="loading-text">LOADING...</div>
+    </div>
+
+    <header>
+        <h1>MI BLOG PERSONAL</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="showLoadingScreen(event)">Inicio</a></li>
+                <li><a href="biografia.html" onclick="showLoadingScreen(event)">Biografía</a></li>
+                <li><a href="blog.html" onclick="showLoadingScreen(event)">Blog</a></li>
+                <li><a href="contacto.html" onclick="showLoadingScreen(event)">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bienvenido a Mi Blog Personal</h2>
+        <h2>Aquí encontrarás información sobre mí y mis intereses.</h2>
+        <img class="Avatar" src="Avatar1.png" alt="Avatar creado con el sistema Memoji de Apple, simulando ser yo">
+        <h2>DanCarCo</h2>
+    </main>
+    <footer>
+        <p class="copyright">&copy; <span id="year"></span> Mi Blog Personal - DanCarCo</p>
+        <div class="social-links">
+            <a href="https://github.com/dancarco" target="_blank">
+                <img src="github-icon.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-carvajal-correa/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+
+</body>
+</html>
