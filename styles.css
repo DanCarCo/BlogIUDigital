@@ -58,6 +58,49 @@ main p {
     text-align: justify;
 }
 
+/* Estilos para los botones colapsables */
+.collapsible {
+    background-color: #0f0;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.collapsible:after {
+    content: '\002B'; /* símbolo '+' */
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 10px;
+}
+
+.collapsible.active:after {
+    content: "\2212"; /* símbolo '-' */
+}
+
+/* Estilo para el contenido colapsable */
+.content {
+    max-height: none; /* Por defecto expandido */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #111;
+    margin-bottom: 15px;
+    color: #0f0;
+    padding: 0 18px;
+}
+
+/* Cuando el contenido está expandido por defecto */
+.collapsible.active + .content {
+    max-height: none; /* Permite que se despliegue por defecto */
+}
+
 .Avatar {
     display: block;
     margin: 1.25em auto;

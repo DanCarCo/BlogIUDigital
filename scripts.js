@@ -62,3 +62,28 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', sendEmail);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const coll = document.querySelectorAll('.collapsible');
+    
+    // Asegúrate de que las pestañas estén expandidas por defecto
+    coll.forEach(function(btn) {
+        const content = btn.nextElementSibling;
+        if (btn.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + "px"; // Mantener expandido
+        }
+        
+        // Hacer clic para expandir o colapsar
+        btn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    });
+});
+
