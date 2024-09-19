@@ -107,7 +107,7 @@ main p {
     object-fit: cover;
     background-color: #fff; 
     padding: 0.3125em; 
-    border: 0.125em solid #0f0; 
+    border: 0.25em solid #0f0; 
 }
 
 .Media {
@@ -118,7 +118,7 @@ main p {
     object-fit: cover;
     background-color: #fff; 
     padding: 0.3125em; 
-    border: 0.125em solid #0f0; 
+    border: 0.25em solid #0f0; 
 }
 
 .Screenshoot {
@@ -128,7 +128,7 @@ main p {
     object-fit: cover;
     background-color: #fff; 
     padding: 0.3125em; 
-    border: 0.125em solid #0f0; 
+    border: 0.25em solid #0f0; 
 }
 
 footer {
