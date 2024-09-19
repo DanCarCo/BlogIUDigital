@@ -123,8 +123,8 @@ main p {
 
 .Screenshoot {
     margin: 1.25em auto;
-    width: 60em; 
-    height: 40em;
+    max-width: 80%; 
+    max-height: 80%;
     object-fit: cover;
     background-color: #fff; 
     padding: 0.3125em; 
