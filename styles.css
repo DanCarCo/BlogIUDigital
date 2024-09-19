@@ -58,7 +58,6 @@ main p {
     text-align: justify;
 }
 
-/* Estilos para los botones colapsables */
 .collapsible {
     background-color: #0f0;
     color: #000;
@@ -74,7 +73,7 @@ main p {
 }
 
 .collapsible:after {
-    content: '\002B'; /* símbolo '+' */
+    content: '\002B';
     color: #000;
     font-weight: bold;
     float: right;
@@ -82,12 +81,11 @@ main p {
 }
 
 .collapsible.active:after {
-    content: "\2212"; /* símbolo '-' */
+    content: "\2212";
 }
 
-/* Estilo para el contenido colapsable */
 .content {
-    max-height: none; /* Por defecto expandido */
+    max-height: none; 
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     background-color: #111;
@@ -96,9 +94,8 @@ main p {
     padding: 0 18px;
 }
 
-/* Cuando el contenido está expandido por defecto */
 .collapsible.active + .content {
-    max-height: none; /* Permite que se despliegue por defecto */
+    max-height: none; 
 }
 
 .Avatar {
@@ -118,6 +115,16 @@ main p {
     margin: 1.25em auto;
     width: 20em; 
     height: 20em;
+    object-fit: cover;
+    background-color: #fff; 
+    padding: 0.3125em; 
+    border: 0.125em solid #0f0; 
+}
+
+.Screenshoot {
+    margin: 1.25em auto;
+    width: 60em; 
+    height: 40em;
     object-fit: cover;
     background-color: #fff; 
     padding: 0.3125em; 
