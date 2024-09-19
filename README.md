@@ -1,0 +1,1 @@
+Actividad desarrollada para la IUDigital de Antioquia, asignatura Introducción a la ingeniería de Software y Datos, actividad 1: Proyecto integrador P1. Creando mi primer blog Actvidad 2: Entrada de Blog - Tutorial de Git
