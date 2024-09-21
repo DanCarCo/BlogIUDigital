@@ -49,7 +49,7 @@ nav ul li a:hover {
 
 main {
     padding: 1.25em;
-    max-width: 1200px;
+    max-width: 75em;
     margin: 0 auto;
     text-align: center;
 }
@@ -62,13 +62,13 @@ main p {
     background-color: #0f0;
     color: #000;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.625em;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 0.625em;
     transition: background-color 0.3s;
 }
 
@@ -77,7 +77,7 @@ main p {
     color: #000;
     font-weight: bold;
     float: right;
-    margin-left: 10px;
+    margin-left: 0.625em;
 }
 
 .collapsible.active:after {
@@ -89,9 +89,9 @@ main p {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     background-color: #111;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
     color: #0f0;
-    padding: 0 18px;
+    padding: 0 1.125em;
 }
 
 .collapsible.active + .content {
@@ -178,36 +178,36 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 37.5em;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25em;
     background-color: #111;
-    border: 2px solid #0f0;
-    border-radius: 5px;
+    border: 0.125em solid #0f0;
+    border-radius: 0.3125em;
 }
 
 form label {
     margin-bottom: 0.625em;
-    font-weight: bold;
+    font-weight: bold;   
 }
 
 form input,
 form textarea {
     margin-bottom: 20px;
     padding: 0.625em;
-    border: 2px solid #0f0;
-    border-radius: 5px;
+    border: 0.125em solid #0f0;
+    border-radius: 0.3125em;
     background-color: #222;
     color: #0f0;
     font-family: 'Roboto Mono', monospace;
 }
 
 form button {
-    padding: 0.625em 20px;
+    padding: 0.625em 1.25em;
     background-color: #0f0;
     color: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
