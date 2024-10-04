@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Personal</title>
+    <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -13,22 +13,38 @@
     </div>
 
     <header>
-        <h1>MI BLOG PERSONAL</h1>
+        <h1>ENCRIPTADOR DE TEXTO</h1>
         <nav>
             <ul>
                 <li><a href="index.html" onclick="showLoadingScreen(event)">Inicio</a></li>
                 <li><a href="biografia.html" onclick="showLoadingScreen(event)">Biografía</a></li>
                 <li><a href="blog.html" onclick="showLoadingScreen(event)">Blog</a></li>
                 <li><a href="contacto.html" onclick="showLoadingScreen(event)">Contacto</a></li>
+                <li><a href="encriptador.html" onclick="showLoadingScreen(event)">Encriptador</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Bienvenido a Mi Blog Personal</h2>
-        <h2>Aquí encontrarás información sobre mí y mis intereses.</h2>
-        <img class="Avatar" src="Images/Avatar1.png" alt="Avatar creado con el sistema Memoji de Apple, simulando ser yo">
-        <h2>DanCarCo</h2>
+        <img class="Avatar" src="Images/binario.png" alt="Avatar creado con el sistema Memoji de Apple, simulando ser yo">
+        <h2>Encriptador de texto</h2>
+        <section class="ingreso-texto">
+            <textarea id="mensaje" placeholder="Ingrese la frase que desea encriptar o desencriptar"></textarea>
+            <p class="parrafo">
+                <img src="Images/Vector.png" alt="Instrucción">
+                Solo letras minúsculas, sin acentos y sin caracteres especiales
+            </p>
+            <div class="botones">
+                <button id="encriptar" aria-label="Encriptar texto">Encriptar</button>
+                <button id="desencriptar" aria-label="Desencriptar texto">Desencriptar</button>
+                <button id="copiar" aria-label="Copiar resultado">Copiar</button>
+            </div>
+        </section>
+        
+        <section class="resultado-texto">
+            <textarea id="resultado" placeholder="Resultado" readonly></textarea>
+        </section>
     </main>
+
     <footer>
         <p class="copyright">&copy; <span id="year"></span> Mi Blog Personal - DanCarCo</p>
         <div class="social-links">
@@ -38,15 +54,10 @@
             <a href="https://www.linkedin.com/in/daniel-carvajal-correa/" target="_blank">
                 <img src="Images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
             </a>
-            <a href="https://wa.me/573176582482" target="_blank">
-                <img src="Images/Whatsapp-icon.png" alt="WhatsApp" class="social-icon">
-            </a>
-        </div>
+        </div>       
     </footer>
 
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="scripts.js"></script>
-    
-</body>
-
 </body>
 </html>
